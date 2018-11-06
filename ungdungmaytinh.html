@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> may tinh </h1>
+<input type="text" id="so1">
+<input type="text" id="so2">
+<button type="submit" onclick="cong()"> cong </button>
+<button type="submit" onclick="tru()"> tru </button>
+<button type="submit"> nhan </button>
+<button type="submit"> chia </button>
+<button type="submit"> bang </button>
+<br>
+<p id="ketqua"></p>
+
+<script>
+    var a,b,c;
+    function cong() {
+        a=parseInt(document.getElementById("so1").value);
+        b=parseInt(document.getElementById("so2").value);
+        c=a+b;
+        document.getElementById("ketqua").innerHTML=c;
+    function tru() {
+
+    }
+        a=parseInt(document.getElementById("so1").value);
+        b=parseInt(document.getElementById("so2").value);
+        c=a-b;
+        document.getElementById("ketqua").innerHTML=c;
+    }
+    function nhan() {
+        a=parseInt(document.getElementById("so1").value);
+        b=parseInt(document.getElementById("so2").value);
+        c=a*b;
+        document.getElementById("ketqua").innerHTML=c;
+    }
+    function chia() {
+        a=parseInt(document.getElementById("so1").value);
+        b=parseInt(document.getElementById("so2").value);
+        c=a/b;
+        document.getElementById("ketqua").innerHTML=c;
+    }
+</script>
+</body>
+</html>

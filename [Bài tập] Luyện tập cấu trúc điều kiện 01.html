@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+//Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không
+
+
+    var a,b;
+    a=parseInt(prompt('nhap vao so a '));
+    b=parseInt(prompt('nhap vao so b'));
+    if (a%b==0)
+    {
+        alert("a chia het cho b");
+    }
+    else
+        alert("a ko chia het cho b");
+
+
+//Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.
+
+    var c = parseInt(prompt('nhap vao tuoi hoc sinh'));
+    if (c>=15 && c<=18)
+    {
+        document.writeln ("hoc sinh du dk hoc");
+    }
+    else
+        document.writeln("hoc sinh ko du dk hoc");
+
+
+//Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0
+
+    var e=parseInt(prompt('nhap vao 1 so nguyen'));
+    if (e>0)
+    {
+        document.writeln("day la 1 so lơn hon 0");
+    }
+    else if (e<0)
+    {
+        document.writeln("day la 1 so nho hon 0");
+    }
+    else
+        document.writeln("day la so 0");
+
+//Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+
+    var x=parseInt(prompt('nhap vao so 1 '));
+    var y=parseInt(prompt('nhap vao so 2 '));
+    var z=parseInt(prompt('nhap vao so 3 '));
+    if (x>y && x>z)
+    {
+        document.writeln(x," la so lon nhat");
+    }
+    else
+    {
+        if (y>z)
+        {
+            document.writeln(y," la so lon nhat");
+        }
+        else
+            document.writeln(z," la so lon nhat");
+    }
+
+//Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+
+
+    var diemkt=parseFloat(prompt('nhap diem kiem tra'));
+    var diemgk=parseFloat(prompt('nhap diem giua ki'));
+    var diemck=parseFloat(prompt('nhap diem kiem tra cuoi ki'));
+    var tb =(diemkt+diemgk+diemck)/3;
+    if (tb>=8)
+    {
+        document.writeln("hoc sinh gioi");
+    }
+    if (tb>=6&&tb<8)
+    {
+        document.writeln("hoc dc");
+    }
+    if (tb<6)
+    {
+        document.writeln("hoc kem");
+    }
+//Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+//Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+</script>
+</body>
+</html>

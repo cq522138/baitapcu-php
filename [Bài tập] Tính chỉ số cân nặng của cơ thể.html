@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="chieucao">
+<br>
+<input type="text" id="cannang">
+<button type="submit" onclick="tinhibm()"> tinh ibm </button>
+<p id="ketqua"></p>
+
+<script>
+function tinhibm() {
+    a=parseFloat(document.getElementById("chieucao").value);
+    b=parseFloat(document.getElementById("cannang").value);
+    c=b/(a*a);
+    if (c < 18)
+        document.writeln("ban rat gay");
+    else if (c < 25.0)
+        document.writeln("ban binh thuong");
+    else if (c < 30.0)
+        document.writeln("ban hoi beo");
+    else if (c>30)
+        document.writeln("bao phi me no roi");
+    document.getElementById("ketqua").innerHTML=c;
+}
+</script>
+</body>
+</html>

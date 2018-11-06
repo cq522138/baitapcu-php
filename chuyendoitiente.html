@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>nhap vao so tien</h1>
+<input type="text" id="sotien">
+<h1> from currency </h1>
+<select name="" id="">
+    <option value="">vnd</option>
+</select>
+
+<h1> to currency </h1>
+<select name="" id="">
+    <option value="">usd</option>
+</select>
+<button type="submit" onclick="trade()"> chuyen doi </button>
+
+<br>
+<p id="ketqua"></p>
+
+<script>
+var a,b;
+function trade() {
+    a=parseInt(document.getElementById("sotien").value);
+    b=a/23;
+    document.getElementById("ketqua").innerHTML=b;
+
+}
+
+</script>
+</body>
+</html>
